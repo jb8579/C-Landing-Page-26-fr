@@ -27,18 +27,20 @@
             <div class="md:container">
                 <div class="pO5rTU4Gue7s42s_Header_flex">
                     <h1>Meilleurs Sites de Paris Sportifs | France Janvier 2025</h1>
-                    <p class="read-more-desktop">Découvrez les meilleurs sites de paris sportifs en France ! Sur groupshape.com, nous avons préparé une liste détaillée pour vous aider à choisir les plateformes les plus fiables et attractives pour parier sur vos sports préférés.
-                        <span id="more-text" class="hidden">
+                    <p class="read-more-desktop">
+                        Découvrez les meilleurs sites de paris sportifs en France ! Sur groupshape.com, nous avons préparé une liste détaillée pour vous aider à choisir les plateformes les plus fiables et attractives pour parier sur vos sports préférés.
+                        <span class="more-text hidden">
                             Notre équipe d'experts passe des heures à analyser et évaluer chaque site afin de vous garantir l'accès aux meilleures cotes, promotions et expériences de jeu. Seuls les bookmakers les plus performants figurent sur notre site.
                         </span>
-                        <span id="read-more" class="read-more" onclick="toggleReadMore()">Lire plus</span>
+                        <span class="read-more" onclick="toggleReadMore(this)">Lire plus</span>
                     </p>
+                    
                     <p class="read-more-mobile">
                         Découvrez les meilleurs sites de paris sportifs  
-                        <span id="more-text" class="hidden">
+                        <span class="more-text hidden">
                             en France ! Sur groupshape.com, nous avons préparé une liste détaillée pour vous aider à choisir les plateformes les plus fiables et attractives pour parier sur vos sports préférés. Notre équipe d'experts passe des heures à analyser et évaluer chaque site afin de vous garantir l'accès aux meilleures cotes, promotions et expériences de jeu. Seuls les bookmakers les plus performants figurent sur notre site.
                         </span>
-                        <span id="read-more" class="read-more" onclick="toggleReadMore()">Lire plus</span>
+                        <span class="read-more" onclick="toggleReadMore(this)">Lire plus</span>
                     </p>
                 </div>
                 <div class="pO5rTU4Gue7s42s_Header_TrustBar">
@@ -539,20 +541,19 @@
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         
         <script>
-            function toggleReadMore() {
-                let moreText = document.getElementById("more-text");
-                let readMoreBtn = document.getElementById("read-more");
-        
+            function toggleReadMore(element) {
+                let moreText = element.previousElementSibling;
+                
                 if (moreText.style.display === "none" || moreText.classList.contains("hidden")) {
                     moreText.style.display = "inline";
-                    readMoreBtn.innerText = "Lire moins";
+                    element.innerText = "Lire moins";
                     moreText.classList.remove("hidden");
                 } else {
                     moreText.style.display = "none";
-                    readMoreBtn.innerText = "Lire plus";
+                    element.innerText = "Lire plus";
                     moreText.classList.add("hidden");
                 }
             }
-        </script>
+            </script>
     </body>
 </html>
