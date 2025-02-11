@@ -5,9 +5,9 @@
       flex-wrap: wrap;
     }
     .ribbon-top-left span {
-      right: 5px;
-      top: 50px;
-      transform: rotate(-90deg);
+        right: 5px;
+        top: 40px;
+        transform: rotate(-90deg);
     }
     .ribbon-top-left {
       top: 0;
@@ -41,7 +41,7 @@
       width: 96%;
     }
     .md\:container {
-      margin: 0 9px !important;
+        margin: 0px 8px !important;
     }
     .pO5rTU4Gue7s42s_Header_TrustBar {
       padding: 0 0 15px;
@@ -127,6 +127,10 @@
     }
   }
   @media only screen and (max-width: 600px) {
+    .ribbon {
+        width: 148px;
+        height: 106px;
+    }
     .header-content {
       padding: 20px 0 0;
     }
@@ -200,25 +204,29 @@
       padding-top: 3px;
     }
     .list-no-sm {
-      font-size: 32px;
+        font-size: 22px;
+        position: relative;
     }
     .list-no-p {
       font-size: 12px;
       letter-spacing: 0.1px;
     }
     .list-score-sm {
-      position: relative;
-      top: -18px;
-      left: 25px;
+        position: relative;
+        top: -6px;
+        left: 25px;
     }
     .list-bonus-lg {
-      font-size: 17px;
-      line-height: 24px;
-      margin-top: 5px;
-      font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        margin-top: 5px;
+        font-weight: 700;
+        color: #272626;
     }
     .list-bonus-sm {
-      font-size: 15px;
+        font-size: 15px;
+        color: #b72323;
+        font-style: oblique;
     }
     .btn {
       min-height: 24px;
